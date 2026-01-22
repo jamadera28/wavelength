@@ -1,6 +1,6 @@
 import sys
 import random
-import os
+
 
 
 prompter = ' \u23CE'
@@ -97,7 +97,7 @@ def main():
             print()
             control_text('PLAYER 2: think of a word on the  ',prompt,' spectrum. Then, tell PLAYER 1 the word!')
             control_text('When you are ready, PLAYER 2, press \u23CE to clear the screen for PLAYER 1')
-            os.system('clear')
+            print("\n" * 100)
             a, b = prompt.split('vs.')
             diff_len = 49 - len(a)
             diff_len2 = 49 - len(b)
